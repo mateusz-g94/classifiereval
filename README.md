@@ -33,6 +33,7 @@ params - dictionary contains models names and sets. Pattern:
 ``` python
  params = {'model_name1' : (model1, {'set1_name' : (x1, y1), 'set2_name' : (x2, y2)}), 'model_name2' : ...}
 ```
+Models - one or more. Sets - one or more. 
 ```python
 params = {}
 params['cbc'] = (cbc_clf, {'train' : (train_prepared, train_y), 'test' : (test_prepared, test_y)})
