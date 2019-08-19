@@ -45,6 +45,7 @@ model_ev.precision_recall_chart(x_thresshold = True)
 
 You can define a lot of models and sets in params. For each model graphs will be displayed. 
 Models are comared between sets (in the future between models too).
+Graphs will be saved in dir ./grp in deafult (save = True).
 # Results:
 ![alt text](https://github.com/mateusz-g94/classifiereval/blob/master/grp/cbc-lift.png)
 ![alt text](https://github.com/mateusz-g94/classifiereval/blob/master/grp/cbc-roc.png)
