@@ -1,4 +1,4 @@
-# Functions:
+# Methods:
 ### 1) 
 ```python
 lift_chart(chart_type = 'lift', scale = 100, cum = True, save = True)
