@@ -8,6 +8,6 @@ setup(
     author='Mateusz Grazda',
     author_email='mateusz.grazda@gmail.com',
     license='unlicense',
-    packages=['clasifiereval'],
+    packages=['classifiereval'],
     zip_safe=False
 )
