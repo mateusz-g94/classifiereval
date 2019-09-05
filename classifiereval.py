@@ -12,7 +12,7 @@ from sklearn.metrics import precision_recall_curve, roc_curve, roc_auc_score
 from scipy.stats import ks_2samp
 import sys, os
 
-class classifiereval:
+class ClassifierEval:
     """
     """
     def __init__(self, params = {}):
@@ -42,7 +42,7 @@ class classifiereval:
                 try:
                     y_proba = params[model][0].predict_proba(params[model][1][eval_set][0])    
                     y_proba = y_proba[:,1]
-                    _eval_data[eval_set] = (y_proba, params[model][1][eval_set][1])             
+                    _eval_data[eval_set] = (y_proba, params[model][1][eval_set][1][list(params[model][1][eval_set][1].columns)[0]])             
                 except:
                     print('Error: Can''t get prediction: ' + model + eval_set + ' Skipping..')
                     print('Error text: {}'.format(sys.exc_info()[1]))
