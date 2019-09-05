@@ -29,7 +29,7 @@ precision_recall_chart(x_thresshold = False, save = True)
 x_thresshold: if False then Precision Recall Curve
               if True then Precision Recall and Thresshold Curve
 # Usage:
-params - dictionary contains models names and sets. Pattern:
+params - dictionary contains models names and sets. y has to be pandas dataframe. Pattern:
 ``` python
  params = {'model_name1' : (model1, {'set1_name' : (x1, y1), 'set2_name' : (x2, y2)}), 'model_name2' : ...}
 ```
